@@ -4,13 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <script src="https://kit.fontawesome.com/a4cef9cb72.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet">
-      <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="style.css" >
   </head>
   <body>
@@ -427,7 +423,99 @@
 
 <!-- start Frequently Asked Questions -->
 <section>
+  <section class="my-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center">
+          <h2>Frequently Asked Questions</h2>
+          <p class=" w-50 mx-auto">
+            It is a long established fact that a reader will be distracted
+            by the readable content of a page when looking at its layout.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="w-75 mx-auto my-5">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"  aria-controls="collapseOne"  >
+                What’s the difference between flexbox and grid ?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show"  aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+              <div class="accordion-body ">
+                <strong>1. &nbsp Dimensionality and Flexibility:</strong> <br>
 
+Flexbox offers greater control over alignment and space distribution between items. Being one-dimensional, Flexbox only deals with either columns or rows.
+Grid has two-dimension layout capabilities which allow flexible widths as a unit of length. This compensates for the limitations in Flex. <br>
+<strong>2.  &nbsp Alignment:</strong> <br>
+
+Flex Direction allows developers to align elements vertically or horizontally, which is used when developers create and reverse rows or columns.
+CSS Grid deploys fractional measure units for grid fluidity and auto-keyword functionality to automatically adjust columns or rows. <br>
+<strong>3. &nbsp Item Management:</strong> <br>
+
+Flex Container is the parent element while Flex Item represents the children. The Flex Container can ensure balanced representation by adjusting item dimensions. This allows developers to design for fluctuating screen sizes.
+Grid supports both implicit and explicit content placement. Its inbuilt automation allows it to automatically extend line items and copy values into the new creation from the preceding item.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed"type="button" data-bs-toggle="collapse"data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                What’s the difference between Tailwind CSS and Bootstrap?
+              </button>
+            </h2>
+            <div  id="collapseTwo"  class="accordion-collapse collapse" aria-labelledby="headingTwo"  data-bs-parent="#accordionExample"  >
+              <div class="accordion-body">
+                <strong>1. &nbsp Bootstrap</strong> is the most popular HTML, CSS, and JavaScript framework for building responsive, mobile-first projects on the web. Tailwind CSS, on the other hand, is the most popular utility-first CSS framework for fast UI development.
+<br>
+<strong>2. &nbsp </strong>The main difference between <strong>TailwindCSS and Bootstrap</strong> is that Tailwind CSS is not a UI kit. Unlike UI kits such as Bootstrap, Bulma, and Foundation, Tailwind CSS doesn’t have a default theme or built-in UI components. Instead, it comes with predesigned widgets you can use to build your site from scratch.
+<br>
+<strong>3. &nbsp Bootstrap </strong> is known for its responsiveness, whereas proponents of Tailwind CSS typically value the framework’s customizability. The best choice for you depends on your priorities and project requirements, but let’s talk about why Tailwind CSS is quickly gaining popularity and more widespread use.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed"type="button" data-bs-toggle="collapse"data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
+                What is CSS Box model ?
+              </button>
+            </h2>
+            <div  id="collapseThree"  class="accordion-collapse collapse" aria-labelledby="headingThree"  data-bs-parent="#accordionExample"  >
+              <div class="accordion-body">
+<strong><i class="fa-solid fa-award"></i></strong>&nbsp When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.
+ <br>
+<strong><i class="fa-solid fa-award"></i></strong>&nbsp  Every box is composed of four parts (or areas), defined by their respective edges: the content edge, padding edge, border edge, and margin edge..
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                What is symentic tag ?
+              </button>
+            </h2>
+            <div id="collapseFour"class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong><i class="fa-solid fa-award"></i></strong>&nbsp Semantic HTML or semantic markup is HTML that introduces meaning to the web page rather than just presentation. For example, a <code>.p</code> tag indicates that the enclosed text is a paragraph. This is both semantic and presentational because people know what paragraphs are, and browsers know how to display them.
+                <br>
+                <strong><i class="fa-solid fa-award"></i></strong>&nbsp On the flip side of this equation, tags such as <code> .b </code> and<code> .i </code> are not semantic. They define only how the text should look (bold or italic), and don't provide any additional meaning to the markup.
+                <br>
+                <strong><i class="fa-solid fa-award"></i></strong>&nbsp A semantic element clearly describes its meaning to both the browser and the developer.
+                <br>
+                <strong><i class="fa-solid fa-award"></i></strong>&nbsp Examples of non-semantic elements: <code>.div</code><code></code> and <code> .span></code> - Tells nothing about its content.
+                <br>
+                <strong><i class="fa-solid fa-award"></i></strong>&nbsp Examples of semantic elements: <code> .form .table </code> and <code> .article </code> - Clearly defines its content.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </section>
 <!-- end Frequently Asked Questions -->
 
